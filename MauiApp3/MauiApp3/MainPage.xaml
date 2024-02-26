@@ -5,13 +5,14 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
     
     <toolkit:MediaElement x:Name="mediaPlayer"
-                          Source="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                          Source="embed://Videos/MyFile.mp4"
                           ShouldShowPlaybackControls="False" />
+    
     <ContentPage.MenuBarItems>
         <MenuBarItem Text="Media">
             <MenuFlyoutItem Text="Play" Clicked="onPlayClicked"/>
             <MenuFlyoutItem Text="Pause" Clicked="onPauseClicked"/>
         </MenuBarItem>
-    </ContentPage.MenuBarItems>
+    </ContentPage.MenuBarItems>   
 
 </ContentPage>
