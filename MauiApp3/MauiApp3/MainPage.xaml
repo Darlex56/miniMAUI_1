@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.MainPage"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+    
+    <toolkit:MediaElement x:Name="mediaPlayer"
+                          Source="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                          ShouldShowPlaybackControls="False" />
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="Media">
+            <MenuFlyoutItem Text="Play" Clicked="onPlayClicked"/>
+            <MenuFlyoutItem Text="Pause" Clicked="onPauseClicked"/>
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+
+</ContentPage>
